@@ -9,6 +9,10 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+/app/.env
+/app/.vendor
+/app/.var
+
 
 ###> symfony/webpack-encore-bundle ###
 /node_modules/
