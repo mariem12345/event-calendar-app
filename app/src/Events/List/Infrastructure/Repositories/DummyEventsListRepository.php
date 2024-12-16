@@ -21,6 +21,6 @@ class DummyEventsListRepository implements EventsListRepository
 
     public function searchAllEvents(): array
     {
-        return $this->orders;
+        return $this->events;
     }
 }
