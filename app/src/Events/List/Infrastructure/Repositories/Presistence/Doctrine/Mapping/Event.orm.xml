@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="Events\Shared\Domain\Event"
+            table="`event`">
+        <embedded name="id"
+                  class="Events\Shared\Domain\EventId"
+                  use-column-prefix="false" />
+        <embedded name="name"
+                  class="Events\Shared\Domain\EventName"
+                  use-column-prefix="false" />
+        <embedded name="description"
+                  class="Events\Shared\Domain\EventDescription"
+                  use-column-prefix="false" />
+        <embedded name="date"
+                  class="Events\Shared\Domain\EventDate"
+                  use-column-prefix="false" />
+    </entity>
+</doctrine-mapping>

@@ -1,0 +1,3 @@
+App\Events\List\Infrastructure\Controller\:
+  resource: ../src/Events/List/Infrastructure/Controller/
+  type: attribute
